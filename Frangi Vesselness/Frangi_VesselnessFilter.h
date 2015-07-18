@@ -9,10 +9,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface Frangi_VesselnessFilter : CIFilter {
-    CIImage      *inputImage;
-    CIVector     *inputCenter;
-    NSNumber     *inputWidth;
-    NSNumber     *inputAmount;
+    CIImage *inputImage;
 }
 
 @end

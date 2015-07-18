@@ -48,38 +48,6 @@ static CIKernel *_Hessian_yy_Kernel = nil;
     return [super init];
 }
 
-- (CGRect)regionOf:(int)sampler  destRect:(CGRect)rect  userInfo:(NSNumber *)radius
-{
-    return CGRectInset(rect, 0, 0);
-}
-
-- (NSDictionary *)customAttributes
-{
-    return @{
-        @"inputCenter":@{
-            kCIAttributeDefault:[CIVector vectorWithX:200.0 Y:200.0],
-            kCIAttributeType:kCIAttributeTypePosition,
-        },
-        @"inputWidth":@{
-            kCIAttributeMin:@1.00,
-            kCIAttributeSliderMin:@1.00,
-            kCIAttributeSliderMax:@1000.00,
-            kCIAttributeDefault:@400.00,
-            kCIAttributeIdentity:@400.00,
-            kCIAttributeType:kCIAttributeTypeDistance,
-        },
-        @"inputAmount":@{
-            kCIAttributeMin:@0.00,
-            kCIAttributeSliderMin:@0.00,
-            kCIAttributeSliderMax:@2.00,
-            kCIAttributeDefault:@0.50,
-            kCIAttributeIdentity:@0.00,
-            kCIAttributeType:kCIAttributeTypeDistance,
-        },
-    };
-}
-
-// called when setting up for fragment program and also calls fragment program
 - (CIImage *)outputImage
 {
     CISampler *src;
@@ -95,3 +63,35 @@ static CIKernel *_Hessian_yy_Kernel = nil;
 }
 
 @end
+
+//- (CGRect)regionOf:(int)sampler  destRect:(CGRect)rect  userInfo:(NSNumber *)radius
+//{
+//    return CGRectInset(rect, 0, 0);
+//}
+
+
+//- (NSDictionary *)customAttributes
+//{
+//    return @{
+//        @"inputCenter":@{
+//            kCIAttributeDefault:[CIVector vectorWithX:200.0 Y:200.0],
+//            kCIAttributeType:kCIAttributeTypePosition,
+//        },
+//        @"inputWidth":@{
+//            kCIAttributeMin:@1.00,
+//            kCIAttributeSliderMin:@1.00,
+//            kCIAttributeSliderMax:@1000.00,
+//            kCIAttributeDefault:@400.00,
+//            kCIAttributeIdentity:@400.00,
+//            kCIAttributeType:kCIAttributeTypeDistance,
+//        },
+//        @"inputAmount":@{
+//            kCIAttributeMin:@0.00,
+//            kCIAttributeSliderMin:@0.00,
+//            kCIAttributeSliderMax:@2.00,
+//            kCIAttributeDefault:@0.50,
+//            kCIAttributeIdentity:@0.00,
+//            kCIAttributeType:kCIAttributeTypeDistance,
+//        },
+//    };
+//}

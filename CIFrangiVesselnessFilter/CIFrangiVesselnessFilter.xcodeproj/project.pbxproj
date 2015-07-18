@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		FC15AB5B1B5939AA00ADD22B /* CIFrangiVesselnessFilterPlugInLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = FC15AB5A1B5939AA00ADD22B /* CIFrangiVesselnessFilterPlugInLoader.h */; };
 		FC15AB5D1B5939AA00ADD22B /* CIFrangiVesselnessFilterPlugInLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15AB5C1B5939AA00ADD22B /* CIFrangiVesselnessFilterPlugInLoader.m */; };
-		FC15AB5F1B5939AA00ADD22B /* CIFrangiVesselnessFilterFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = FC15AB5E1B5939AA00ADD22B /* CIFrangiVesselnessFilterFilter.h */; };
-		FC15AB611B5939AA00ADD22B /* CIFrangiVesselnessFilterFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15AB601B5939AA00ADD22B /* CIFrangiVesselnessFilterFilter.m */; };
+		FC15AB5F1B5939AA00ADD22B /* CIFrangiVesselnessFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = FC15AB5E1B5939AA00ADD22B /* CIFrangiVesselnessFilter.h */; };
+		FC15AB611B5939AA00ADD22B /* CIFrangiVesselnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15AB601B5939AA00ADD22B /* CIFrangiVesselnessFilter.m */; };
 		FC15AB631B5939AA00ADD22B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FC15AB621B5939AA00ADD22B /* index.html */; };
 		FC15AB651B5939AA00ADD22B /* Description.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC15AB641B5939AA00ADD22B /* Description.plist */; };
 		FC15AB681B5939AA00ADD22B /* Description.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC15AB661B5939AA00ADD22B /* Description.strings */; };
@@ -23,8 +23,8 @@
 		FC15AB571B5939AA00ADD22B /* CIFrangiVesselnessFilter.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIFrangiVesselnessFilter.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC15AB5A1B5939AA00ADD22B /* CIFrangiVesselnessFilterPlugInLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIFrangiVesselnessFilterPlugInLoader.h; sourceTree = "<group>"; };
 		FC15AB5C1B5939AA00ADD22B /* CIFrangiVesselnessFilterPlugInLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIFrangiVesselnessFilterPlugInLoader.m; sourceTree = "<group>"; };
-		FC15AB5E1B5939AA00ADD22B /* CIFrangiVesselnessFilterFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIFrangiVesselnessFilterFilter.h; sourceTree = "<group>"; };
-		FC15AB601B5939AA00ADD22B /* CIFrangiVesselnessFilterFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIFrangiVesselnessFilterFilter.m; sourceTree = "<group>"; };
+		FC15AB5E1B5939AA00ADD22B /* CIFrangiVesselnessFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIFrangiVesselnessFilter.h; sourceTree = "<group>"; };
+		FC15AB601B5939AA00ADD22B /* CIFrangiVesselnessFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIFrangiVesselnessFilter.m; sourceTree = "<group>"; };
 		FC15AB621B5939AA00ADD22B /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		FC15AB641B5939AA00ADD22B /* Description.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Description.plist; sourceTree = "<group>"; };
 		FC15AB671B5939AA00ADD22B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Description.strings; sourceTree = "<group>"; };
@@ -66,8 +66,8 @@
 			children = (
 				FC15AB5A1B5939AA00ADD22B /* CIFrangiVesselnessFilterPlugInLoader.h */,
 				FC15AB5C1B5939AA00ADD22B /* CIFrangiVesselnessFilterPlugInLoader.m */,
-				FC15AB5E1B5939AA00ADD22B /* CIFrangiVesselnessFilterFilter.h */,
-				FC15AB601B5939AA00ADD22B /* CIFrangiVesselnessFilterFilter.m */,
+				FC15AB5E1B5939AA00ADD22B /* CIFrangiVesselnessFilter.h */,
+				FC15AB601B5939AA00ADD22B /* CIFrangiVesselnessFilter.m */,
 				FC15AB621B5939AA00ADD22B /* index.html */,
 				FC15AB641B5939AA00ADD22B /* Description.plist */,
 				FC15AB661B5939AA00ADD22B /* Description.strings */,
@@ -86,7 +86,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC15AB5F1B5939AA00ADD22B /* CIFrangiVesselnessFilterFilter.h in Headers */,
+				FC15AB5F1B5939AA00ADD22B /* CIFrangiVesselnessFilter.h in Headers */,
 				FC15AB5B1B5939AA00ADD22B /* CIFrangiVesselnessFilterPlugInLoader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC15AB611B5939AA00ADD22B /* CIFrangiVesselnessFilterFilter.m in Sources */,
+				FC15AB611B5939AA00ADD22B /* CIFrangiVesselnessFilter.m in Sources */,
 				FC15AB5D1B5939AA00ADD22B /* CIFrangiVesselnessFilterPlugInLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  CIFrangiVesselnessFilterFilter.h
+//  CIFrangiVesselnessFilter.h
 //  CIFrangiVesselnessFilter
 //
 //  Created by Dylan Walker Brown on 7/17/15.
@@ -8,11 +8,9 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-@interface CIFrangiVesselnessFilterFilter : CIFilter {
+@interface CIFrangiVesselnessFilter : CIFilter {
     CIImage      *inputImage;
-    CIVector     *inputCenter;
-    NSNumber     *inputWidth;
-    NSNumber     *inputAmount;
+    NSNumber     *inputSigma;
 }
 
 @end

@@ -14,7 +14,9 @@
 		FC15AB631B5939AA00ADD22B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FC15AB621B5939AA00ADD22B /* index.html */; };
 		FC15AB651B5939AA00ADD22B /* Description.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC15AB641B5939AA00ADD22B /* Description.plist */; };
 		FC15AB681B5939AA00ADD22B /* Description.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC15AB661B5939AA00ADD22B /* Description.strings */; };
-		FC15AB6A1B5939AA00ADD22B /* CIFrangiVesselnessFilterFilterKernel.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = FC15AB691B5939AA00ADD22B /* CIFrangiVesselnessFilterFilterKernel.cikernel */; };
+		FC15AB6A1B5939AA00ADD22B /* Hessian_xx_Kernel.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = FC15AB691B5939AA00ADD22B /* Hessian_xx_Kernel.cikernel */; };
+		FC3B62751B5A955F007355FB /* Hessian_xy_Kernel.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = FC3B62741B5A955F007355FB /* Hessian_xy_Kernel.cikernel */; };
+		FC3B62771B5A956E007355FB /* Hessian_yy_Kernel.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = FC3B62761B5A956E007355FB /* Hessian_yy_Kernel.cikernel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		FC15AB621B5939AA00ADD22B /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		FC15AB641B5939AA00ADD22B /* Description.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Description.plist; sourceTree = "<group>"; };
 		FC15AB671B5939AA00ADD22B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Description.strings; sourceTree = "<group>"; };
-		FC15AB691B5939AA00ADD22B /* CIFrangiVesselnessFilterFilterKernel.cikernel */ = {isa = PBXFileReference; lastKnownFileType = text; path = CIFrangiVesselnessFilterFilterKernel.cikernel; sourceTree = "<group>"; };
+		FC15AB691B5939AA00ADD22B /* Hessian_xx_Kernel.cikernel */ = {isa = PBXFileReference; lastKnownFileType = text; path = Hessian_xx_Kernel.cikernel; sourceTree = "<group>"; };
 		FC15AB6B1B5939AA00ADD22B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3B62741B5A955F007355FB /* Hessian_xy_Kernel.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hessian_xy_Kernel.cikernel; sourceTree = "<group>"; };
+		FC3B62761B5A956E007355FB /* Hessian_yy_Kernel.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hessian_yy_Kernel.cikernel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,9 @@
 				FC15AB621B5939AA00ADD22B /* index.html */,
 				FC15AB641B5939AA00ADD22B /* Description.plist */,
 				FC15AB661B5939AA00ADD22B /* Description.strings */,
-				FC15AB691B5939AA00ADD22B /* CIFrangiVesselnessFilterFilterKernel.cikernel */,
+				FC15AB691B5939AA00ADD22B /* Hessian_xx_Kernel.cikernel */,
+				FC3B62761B5A956E007355FB /* Hessian_yy_Kernel.cikernel */,
+				FC3B62741B5A955F007355FB /* Hessian_xy_Kernel.cikernel */,
 				FC15AB6B1B5939AA00ADD22B /* Info.plist */,
 			);
 			path = CIFrangiVesselnessFilter;
@@ -144,8 +150,10 @@
 			files = (
 				FC15AB681B5939AA00ADD22B /* Description.strings in Resources */,
 				FC15AB631B5939AA00ADD22B /* index.html in Resources */,
+				FC3B62751B5A955F007355FB /* Hessian_xy_Kernel.cikernel in Resources */,
+				FC3B62771B5A956E007355FB /* Hessian_yy_Kernel.cikernel in Resources */,
 				FC15AB651B5939AA00ADD22B /* Description.plist in Resources */,
-				FC15AB6A1B5939AA00ADD22B /* CIFrangiVesselnessFilterFilterKernel.cikernel in Resources */,
+				FC15AB6A1B5939AA00ADD22B /* Hessian_xx_Kernel.cikernel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +305,7 @@
 				FC15AB701B5939AA00ADD22B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,23 @@
+/*
+A Core Image kernel routine that calculates the Hessian in yy.
+*/
+
+kernel vec4 hessian_yy(sampler src, __color color)
+{
+const float sigma = 10.0;
+const float n_kernel = 6.0 * sigma + 1.0;
+const float PI = 3.1415927;
+
+vec2 dest = destCoord();
+
+float temp = 0.0;
+vec4 out_px = vec4(0.0, 0.0, 0.0, 1.0);
+
+for (float x = ceil(-n_kernel / 2.0); x < (n_kernel / 2.0); x = x + 1.0) {
+for (float y = ceil(-n_kernel / 2.0); y < (n_kernel / 2.0); y = y + 1.0) {
+temp = 1.0 / (2.0 * PI * sigma*sigma*sigma*sigma) * (x*x / (sigma*sigma) - 1.0) * exp( -(x*x + y*y) / (2.0 * sigma*sigma) );
+out_px.rgb = out_px.rgb + sample(src, samplerTransform(src, dest + vec2(-y, -x) )).rgb * temp;
+}
+}
+return out_px;
+}

@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC3B62F21B5AD509007355FB /* Frangi_VesselnessPlugInLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3B62F11B5AD509007355FB /* Frangi_VesselnessPlugInLoader.h */; };
+		FC3B62F41B5AD509007355FB /* Frangi_VesselnessPlugInLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3B62F31B5AD509007355FB /* Frangi_VesselnessPlugInLoader.m */; };
+		FC3B62F61B5AD509007355FB /* Frangi_VesselnessFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3B62F51B5AD509007355FB /* Frangi_VesselnessFilter.h */; };
+		FC3B62F81B5AD509007355FB /* Frangi_VesselnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3B62F71B5AD509007355FB /* Frangi_VesselnessFilter.m */; };
+		FC3B62FA1B5AD509007355FB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FC3B62F91B5AD509007355FB /* index.html */; };
+		FC3B62FC1B5AD509007355FB /* Description.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC3B62FB1B5AD509007355FB /* Description.plist */; };
+		FC3B62FF1B5AD509007355FB /* Description.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC3B62FD1B5AD509007355FB /* Description.strings */; };
+		FC3B630B1B5AD51F007355FB /* Hessian_xx_Kernel.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = FC3B63081B5AD51F007355FB /* Hessian_xx_Kernel.cikernel */; };
+		FC3B630C1B5AD51F007355FB /* Hessian_yy_Kernel.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = FC3B63091B5AD51F007355FB /* Hessian_yy_Kernel.cikernel */; };
+		FC3B630D1B5AD51F007355FB /* Hessian_xy_Kernel.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = FC3B630A1B5AD51F007355FB /* Hessian_xy_Kernel.cikernel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC3B62EE1B5AD509007355FB /* Frangi Vesselness.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Frangi Vesselness.plugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3B62F11B5AD509007355FB /* Frangi_VesselnessPlugInLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Frangi_VesselnessPlugInLoader.h; sourceTree = "<group>"; };
+		FC3B62F31B5AD509007355FB /* Frangi_VesselnessPlugInLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Frangi_VesselnessPlugInLoader.m; sourceTree = "<group>"; };
+		FC3B62F51B5AD509007355FB /* Frangi_VesselnessFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Frangi_VesselnessFilter.h; sourceTree = "<group>"; };
+		FC3B62F71B5AD509007355FB /* Frangi_VesselnessFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Frangi_VesselnessFilter.m; sourceTree = "<group>"; };
+		FC3B62F91B5AD509007355FB /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		FC3B62FB1B5AD509007355FB /* Description.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Description.plist; sourceTree = "<group>"; };
+		FC3B62FE1B5AD509007355FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Description.strings; sourceTree = "<group>"; };
+		FC3B63021B5AD509007355FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3B63081B5AD51F007355FB /* Hessian_xx_Kernel.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hessian_xx_Kernel.cikernel; sourceTree = "<group>"; };
+		FC3B63091B5AD51F007355FB /* Hessian_yy_Kernel.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hessian_yy_Kernel.cikernel; sourceTree = "<group>"; };
+		FC3B630A1B5AD51F007355FB /* Hessian_xy_Kernel.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hessian_xy_Kernel.cikernel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC3B62EA1B5AD509007355FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC3B62E41B5AD509007355FB = {
+			isa = PBXGroup;
+			children = (
+				FC3B62F01B5AD509007355FB /* Frangi Vesselness */,
+				FC3B62EF1B5AD509007355FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC3B62EF1B5AD509007355FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC3B62EE1B5AD509007355FB /* Frangi Vesselness.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC3B62F01B5AD509007355FB /* Frangi Vesselness */ = {
+			isa = PBXGroup;
+			children = (
+				FC3B62F11B5AD509007355FB /* Frangi_VesselnessPlugInLoader.h */,
+				FC3B62F31B5AD509007355FB /* Frangi_VesselnessPlugInLoader.m */,
+				FC3B62F51B5AD509007355FB /* Frangi_VesselnessFilter.h */,
+				FC3B62F71B5AD509007355FB /* Frangi_VesselnessFilter.m */,
+				FC3B62F91B5AD509007355FB /* index.html */,
+				FC3B62FB1B5AD509007355FB /* Description.plist */,
+				FC3B62FD1B5AD509007355FB /* Description.strings */,
+				FC3B63081B5AD51F007355FB /* Hessian_xx_Kernel.cikernel */,
+				FC3B630A1B5AD51F007355FB /* Hessian_xy_Kernel.cikernel */,
+				FC3B63091B5AD51F007355FB /* Hessian_yy_Kernel.cikernel */,
+				FC3B63021B5AD509007355FB /* Info.plist */,
+			);
+			path = "Frangi Vesselness";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FC3B62EB1B5AD509007355FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3B62F61B5AD509007355FB /* Frangi_VesselnessFilter.h in Headers */,
+				FC3B62F21B5AD509007355FB /* Frangi_VesselnessPlugInLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FC3B62ED1B5AD509007355FB /* Frangi Vesselness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3B63051B5AD509007355FB /* Build configuration list for PBXNativeTarget "Frangi Vesselness" */;
+			buildPhases = (
+				FC3B62E91B5AD509007355FB /* Sources */,
+				FC3B62EA1B5AD509007355FB /* Frameworks */,
+				FC3B62EB1B5AD509007355FB /* Headers */,
+				FC3B62EC1B5AD509007355FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Frangi Vesselness";
+			productName = "Frangi Vesselness";
+			productReference = FC3B62EE1B5AD509007355FB /* Frangi Vesselness.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC3B62E51B5AD509007355FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Dylan Walker Brown";
+				TargetAttributes = {
+					FC3B62ED1B5AD509007355FB = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = FC3B62E81B5AD509007355FB /* Build configuration list for PBXProject "Frangi Vesselness" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FC3B62E41B5AD509007355FB;
+			productRefGroup = FC3B62EF1B5AD509007355FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC3B62ED1B5AD509007355FB /* Frangi Vesselness */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC3B62EC1B5AD509007355FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3B62FF1B5AD509007355FB /* Description.strings in Resources */,
+				FC3B630B1B5AD51F007355FB /* Hessian_xx_Kernel.cikernel in Resources */,
+				FC3B630C1B5AD51F007355FB /* Hessian_yy_Kernel.cikernel in Resources */,
+				FC3B62FA1B5AD509007355FB /* index.html in Resources */,
+				FC3B62FC1B5AD509007355FB /* Description.plist in Resources */,
+				FC3B630D1B5AD51F007355FB /* Hessian_xy_Kernel.cikernel in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC3B62E91B5AD509007355FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3B62F41B5AD509007355FB /* Frangi_VesselnessPlugInLoader.m in Sources */,
+				FC3B62F81B5AD509007355FB /* Frangi_VesselnessFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC3B62FD1B5AD509007355FB /* Description.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC3B62FE1B5AD509007355FB /* en */,
+			);
+			name = Description.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC3B63031B5AD509007355FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FC3B63041B5AD509007355FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FC3B63061B5AD509007355FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Frangi Vesselness/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Image Units";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_BUNDLE_IDENTIFIER = "djwbrown.Frangi-Vesselness";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		FC3B63071B5AD509007355FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Frangi Vesselness/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Image Units";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_BUNDLE_IDENTIFIER = "djwbrown.Frangi-Vesselness";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC3B62E81B5AD509007355FB /* Build configuration list for PBXProject "Frangi Vesselness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3B63031B5AD509007355FB /* Debug */,
+				FC3B63041B5AD509007355FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC3B63051B5AD509007355FB /* Build configuration list for PBXNativeTarget "Frangi Vesselness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3B63061B5AD509007355FB /* Debug */,
+				FC3B63071B5AD509007355FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC3B62E51B5AD509007355FB /* Project object */;
+}

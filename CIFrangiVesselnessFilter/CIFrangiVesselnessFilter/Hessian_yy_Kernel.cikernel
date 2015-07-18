@@ -2,6 +2,7 @@
 A Core Image kernel routine that calculates the Hessian in yy.
 */
 
+/*
 kernel vec4 hessian_yy(sampler src, __color color)
 {
 const float sigma = 10.0;
@@ -20,4 +21,12 @@ out_px.rgb = out_px.rgb + sample(src, samplerTransform(src, dest + vec2(-y, -x) 
 }
 }
 return out_px;
+}
+*/
+
+kernel vec4 hessian_yy(sampler src, __color color)
+{
+vec4 px = sample(src, samplerCoord(src));
+px.rgb = px.aaa - px.rgb;
+return px;
 }

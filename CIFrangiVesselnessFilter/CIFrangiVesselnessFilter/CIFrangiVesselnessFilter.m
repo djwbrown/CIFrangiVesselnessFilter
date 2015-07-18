@@ -72,9 +72,12 @@ static CIKernel *_Hessian_yy_Kernel = nil;
     
     src = [CISampler samplerWithImage:inputImage];
     sigma = [inputSigma floatValue];
-    [self apply:_Hessian_xx_Kernel, src, nil];
-    [self apply:_Hessian_xy_Kernel, src, nil];
-    return [self apply:_Hessian_xy_Kernel, src, nil];
+    return [self apply:_Hessian_xx_Kernel, src,
+            kCIApplyOptionDefinition, [[src definition] insetByX:-sigma * 3.0 Y:-sigma * 3.0],
+            kCIApplyOptionUserInfo, [NSNumber numberWithFloat:sigma * 3.0], nil];
+    
+//    [self apply:_Hessian_xy_Kernel, src, nil];
+//    return [self apply:_Hessian_xy_Kernel, src, nil];
     
 //    return [self apply:_CIFrangiVesselnessFilterKernel, src,
 //        [NSNumber numberWithFloat:sigma],

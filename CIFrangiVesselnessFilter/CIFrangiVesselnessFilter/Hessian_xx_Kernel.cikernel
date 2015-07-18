@@ -24,9 +24,11 @@ return out_px;
 }
 */
 
-kernel vec4 hessian_xx(sampler src, __color color)
+kernel vec4 inversion(sampler src)
 {
 vec4 px = sample(src, samplerCoord(src));
-px.rgb = px.aaa - px.rgb;
+px.r = 1.0 - px.r;
+px.g = 1.0 - px.g;
+px.b = 1.0 - px.b;
 return px;
 }

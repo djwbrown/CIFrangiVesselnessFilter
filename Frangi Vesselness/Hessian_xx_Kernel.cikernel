@@ -1,7 +1,7 @@
 /*
 A Core Image kernel routine that calculates the Hessian in xx.
 */
-
+/*
 kernel vec4 hessian_xx(sampler src)
 {
 const float sigma = 10.0;
@@ -21,14 +21,16 @@ out_px.rgb = out_px.rgb + sample(src, samplerTransform(src, dest + vec2(-x, -y) 
 }
 return out_px;
 }
+*/
 
-/*
-kernel vec4 inversion(sampler src)
+kernel vec4 channel_shift(sampler src)
 {
 vec4 px = sample(src, samplerCoord(src));
-px.r = 1.0 - px.r;
-px.g = 1.0 - px.g;
-px.b = 1.0 - px.b;
-return px;
+vec4 final;
+
+final.r = px.g;
+final.g = px.b;
+final.b = px.r;
+final.a = px.a;
+return final;
 }
-*/

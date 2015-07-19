@@ -9,6 +9,7 @@
 #import "Frangi_VesselnessFilter.h"
 #import <Foundation/Foundation.h>
 #import <ApplicationServices/ApplicationServices.h>
+@import Accelerate;
 
 @implementation Frangi_VesselnessFilter
 
@@ -51,6 +52,9 @@ static CIKernel *_Hessian_yy_Kernel = nil;
 - (CIImage *)outputImage
 {
     CISampler *src;
+//    CIImage *Dxx;
+//    CIImage *Dxy;
+//    CIImage *Dyy;
     CIImage *result;
     
     src = [CISampler samplerWithImage:inputImage];
@@ -60,6 +64,17 @@ static CIKernel *_Hessian_yy_Kernel = nil;
     src = [CISampler samplerWithImage:result];
     result = [self apply:_Hessian_yy_Kernel, src, nil];
     return result;
+    
+//    Dxx = [self apply:_Hessian_xx_Kernel, src, nil];
+//    Dxy = [self apply:_Hessian_xy_Kernel, src, nil];
+//    Dyy = [self apply:_Hessian_yy_Kernel, src, nil];
+    
+    // Adjust for scale
+//    Dxx = Dxx*sigma*sigma;
+//    Dyy = Dyy*sigma*sigma;
+//    Dxy = Dxy*sigma*sigma;
+    
+    // Estimate the eigenvalues from Dxx, Dxy, Dyy.
 }
 
 @end
